@@ -1,0 +1,32 @@
+<head>
+<link rel="stylesheet" href="css.css"/>
+<script>
+	var lang = {
+		title    : 'Dynamite Game',
+		youwin   : 'YOU WIN!',
+		gameover : 'GAME OVER'
+	}
+</script>
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.8.9.custom.min.js"></script>
+<script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+<script src="gameengine.js"></script>
+<script src="levels.js"></script>
+</head>
+<body>
+	<div id="help" class="hidden"></div>
+	<div id="gamescreen" class="hidden">
+		<div id="pointsbar">
+			Level:  <span id="level">0</span>
+			Points: <span id="points">0</span>
+		</div>
+		<div id="map"></div>
+		<div id="resetbut" onclick="document.location.reload();/*Game.startgame();*/"></div>
+	</div>
+	<div id="startscreen">
+		<div id="playbutton"></div>
+	</div>
+	<div id="youwin" class="hidden">
+		YOU WIN!
+	</div>
+</body>
